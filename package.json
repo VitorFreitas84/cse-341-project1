@@ -4,7 +4,8 @@
   "description": "My First Project",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,6 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongodb": "^6.14.2"
-  }
+  },
+  "keywords": []
 }
