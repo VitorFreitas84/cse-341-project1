@@ -33,6 +33,6 @@ const getDatabase = () => {
 };
 
 module.exports = {
-    initDb,
-    getDatabase
+    initdb,
+    getdatabase
 };
