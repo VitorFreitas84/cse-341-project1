@@ -11,6 +11,8 @@ const initDb = (callback) => {
         return callback(null, database);
     }
 
+    console.log('MONGODB_URL:', process.env.MONGODB_URL); // Log the MONGODB_URL
+
     MongoClient.connect(process.env.MONGODB_URL)
         .then((client) => {
             database = client.db(); // Ensure it selects the database
@@ -31,6 +33,6 @@ const getDatabase = () => {
 };
 
 module.exports = {
-    initDb,      // Correct function name
-    getDatabase  // Correct function export
+    initDb,
+    getDatabase
 };
