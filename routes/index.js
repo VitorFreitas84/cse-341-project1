@@ -1,5 +1,7 @@
 const router = require('express').Router();
 
-router.get('Vitor Freitas', (req, res) => {res.send('Hello World')});
+router.get('/', (req, res) => { res.send('Hello World');});
 
-module.exports = router; 
+router.use('/users', require('../routes/users'));
+
+module.exports = router;
